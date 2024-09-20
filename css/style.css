@@ -1,0 +1,170 @@
+/* your-stylesheet.css */
+
+/* Ensure background image covers the entire page */
+.background-image {
+    background-image: url('../images/business.png');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px); /* Full viewport height minus the navbar height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+}
+
+.navbar .nav-item {
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar .nav-link {
+    color: #26C485; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 15px; /* Add padding for better hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar .nav-link:hover {
+    background-color: #ffffff;
+    color: #26C485;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color */
+}
+
+/* Join Group Button Styling */
+#join-group {
+    background-color: #ffffff;
+    color: #26C485;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid transparent; /* Border for hover effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#join-group:hover {
+    background-color: #26C485; 
+    color: #fff;
+}
+
+/* Centered Buttons Styling */
+.background-image .btn {
+    color: #26C485; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners for buttons */
+    padding: 12px 20px; /* Add padding for better button appearance */
+    border: 2px solid transparent; /* Border for hover effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.background-image .btn-primary {
+    background-color: #26C485;
+    color: #ffffff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the fields */
+    
+}
+
+.login-form input {
+    padding: 10px;
+    border-radius: 8px; /* Rounded borders */
+    border: 2px solid #4CAF50;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center; /* Center the placeholder text */
+    width: 250px; /* Adjust width as needed */
+}
+
+.login-form button {
+    padding: 10px;
+    border-radius: 8px; /* Rounded button */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px; /* Adjust width as needed */
+}
+
+.login-form button:hover {
+    background-color: #39FF14; /* Button hover effect */
+    color:#ffffff
+}
+
+/* Optional: style the placeholder text */
+.login-form input::placeholder {
+    color: #000000;
+    font-size: 16px;
+    text-align: center; /* Ensures placeholder text is centered */
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #39FF14;
+}
+
+/* Bottom Navbar Styling */
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(144, 238, 144, 0.5), rgba(0, 110, 0, 0.5));
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* FAQ Icon Styling */
+.faq-icon {
+    margin-left: 10px;
+}
+#faq:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .faq-icon {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .bottom-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
